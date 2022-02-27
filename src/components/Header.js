@@ -17,9 +17,12 @@ function Header() {
           <a href='#'>Events</a>
           <a href='#'>Talks</a>
           <a href='#'>Highly Rated</a>
-
-
+          <div className='navitemsdiv2'>
+            <a href='#'>Login </a>
+            <button>Register</button>
         </div>
+        </div>
+        
 
       </div>
       

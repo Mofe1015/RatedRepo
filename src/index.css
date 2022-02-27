@@ -19,7 +19,10 @@ body {
 }
 
 .innerbannerdiv {
+  align-items: center;
   position: absolute;
+  margin-top: 0px;
+  padding-top: 0px;
   margin-left: 20%;
   margin-top: 10px;
   width: 60%;
@@ -31,7 +34,8 @@ body {
   align-items: center;
   color: white;
 }
-.navitemsdiv > a {
+.navitemsdiv > a,
+.navitemsdiv2 > a {
   color: white;
   text-decoration: none;
   padding-top: 40px;
@@ -39,8 +43,33 @@ body {
   padding-right: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.navitemsdiv > a:hover {
+.navitemsdiv > a:hover,
+.navitemsdiv2 > a:hover {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration: underline 2px;
+}
+
+.navitemsdiv2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: auto;
+}
+
+.navitemsdiv2 > button {
+  color: white;
+
+  margin-top: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navitemsdiv2 > button:hover {
+  background-color: white;
+  color: grey;
 }
