@@ -18,9 +18,29 @@ body {
   display: flex;
 }
 
-.morediv {
+.innerbannerdiv {
   position: absolute;
-  right: 50%;
-  left: 50%;
-  bottom: 50%;
+  margin-left: 20%;
+  margin-top: 10px;
+  width: 60%;
+  height: 80%;
+}
+
+.navitemsdiv {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.navitemsdiv > a {
+  color: white;
+  text-decoration: none;
+  padding-top: 40px;
+  font-size: 15px;
+  padding-right: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navitemsdiv > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration: underline 2px;
 }

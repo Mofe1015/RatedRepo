@@ -7,65 +7,27 @@ import bannerimg1 from'../images/bannerimg1.jpg';
 import bannerimg4 from'../images/movies.jpg';
 
 
+function Header() {
+  return (
+    <div className="Header">
+      <img src={require('../images/bannerimg5.jpg') }  className="bannerimg"></img>
+      <div className='innerbannerdiv'>
+        <div className='navitemsdiv'>
+          <a href='#'>Write a Review</a>
+          <a href='#'>Events</a>
+          <a href='#'>Talks</a>
+          <a href='#'>Highly Rated</a>
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      images: [  
-        bannerimg4,
-        bannerimg3,
-        bannerimg2,
-        bannerimg1,
-      ],
-      selectedImage: bannerimg1
-    };
-  }
 
-  componentDidMount() {
-    let intervalId = setInterval(() => {
-      this.setState(prevState => {
-        if (prevState.selectedImage === this.state.images[0]) {
-          var x = this.state.images 
-          for (var i = 0; i < x.length; i++){
-            
-          }
-          return {
-           
-            selectedImage: this.state.images[i]
-          };
-        } else {
-          return {
-            selectedImage: this.state.images[1]
-          };
-        }
-      });
-    }, 2000);
-
-    this.setState({
-      intervalId
-    });
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.state.intervalId);
-  }
-
-   
-
-  render() {
-    const showimg = this.state.selectedImage
-    return (
-      <nav className="Header"  >
-        <img src={showimg} className="bannerimg" />
-        <div className="morediv">
-            <h1>testing</h1>
         </div>
-      </nav>
-    );
-  }
+
+      </div>
+      
+    </div>
+    
+  );
 }
 
-
 export default Header;
+
 
