@@ -20,7 +20,16 @@ function Header() {
           <div className='navitemsdiv2'>
             <a href='#'>Login </a>
             <button>Register</button>
+          </div>
         </div>
+        <div className='searchbardiv'>
+          <h1>Search</h1>
+          <input  placeholder={"Restaurant, Movies, Gadgets, More ...."}></input>
+          <div class="vl"></div>
+          <h1>Location</h1>
+          <input  placeholder={"Adrress, Street, City, State, Country "}></input>
+          <button ><img src={require('../images/search.png') }  className="searchimg"/></button>
+
         </div>
         
 

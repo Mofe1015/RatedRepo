@@ -73,3 +73,54 @@ body {
   background-color: white;
   color: grey;
 }
+
+.searchbardiv {
+  margin-top: 20%;
+  width: 100%;
+  height: 45px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+}
+
+.searchbardiv > h1 {
+  align-self: center;
+  color: #666666;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: helvetica;
+}
+
+.searchbardiv > input {
+  font-size: 19px;
+  margin-left: 10px;
+  border-style: none;
+  width: 40%;
+}
+.searchbardiv > input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.vl {
+  border-left: 2px solid grey;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.searchbardiv > button {
+  border: 0;
+  background-color: #b82727;
+  border-radius: 0 5px 5px 0px;
+  width: 70px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.searchbardiv > button:hover {
+  background-color: #be1f20;
+}
+
+.searchimg {
+  width: 20px;
+}
