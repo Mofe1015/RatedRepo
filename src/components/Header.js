@@ -52,7 +52,7 @@ function BtmNav(){
 function HeaderItems(){
   return(
     <div className="Header">
-      <img src={require('../images/bannerimg14jpg.jpg') }  className="bannerimg"></img>
+      <img src={require('../images/bannerimg17.jpg') }  className="bannerimg"></img>
       <div className='innerbannerdiv'>
         <TopNav/>
         <SearchBar/>
