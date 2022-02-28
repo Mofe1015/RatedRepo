@@ -34,18 +34,35 @@ function SearchBar(){
   )
 }
 
+function BtmNav(){
+  return(
+    <div className='btmnavitemsdiv'>
+      <img className='navimg' src={require('../images/restaurant.png') } />
+      <a href='#'>Restaurants</a>
+      <img className='navimg' src={require('../images/phone.png') } />
+      <a href='#'>Gadgets</a>
+      <img className='navimg' src={require('../images/services1.png') } />
+      <a href='#'>Local Services</a>
+      <img className='navimg' src={require('../images/video.png') } />
+      <a href='#'>Movies</a>
+  </div>
+  )
+}
+
 function HeaderItems(){
   return(
     <div className="Header">
-      <img src={require('../images/bannerimg8.jpg') }  className="bannerimg"></img>
+      <img src={require('../images/bannerimg11.jpg') }  className="bannerimg"></img>
       <div className='innerbannerdiv'>
         <TopNav/>
-       <SearchBar/>
+        <SearchBar/>
+        <BtmNav/>
       </div>
       
     </div>
   )
 }
+
 
 
 

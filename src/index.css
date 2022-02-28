@@ -120,7 +120,31 @@ body {
 .searchbardiv > button:hover {
   background-color: #be1f20;
 }
-
 .searchimg {
   width: 20px;
+}
+.btmnavitemsdiv {
+  display: flex;
+
+  color: white;
+  margin-left: 25%;
+}
+.btmnavitemsdiv > a {
+  color: white;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  padding-right: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+}
+.btmnavitemsdiv > a:hover {
+  text-decoration: underline;
+}
+.navimg {
+  height: 15px;
+  width: 18px;
+  margin-top: 21px;
+  padding-right: 2px;
 }
