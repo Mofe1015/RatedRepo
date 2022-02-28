@@ -154,3 +154,62 @@ body {
   height: 400px;
   margin-left: 30%;
 }
+
+.Hrateddiv {
+  width: 80%;
+  height: 1000px;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.itmimgdiv {
+  width: 250px;
+  height: 200px;
+}
+.itmimg {
+  width: 100%;
+  height: 100%;
+}
+.btmcarddiv {
+  width: 250px;
+  height: 150px;
+  background-color: black;
+  border-radius: 0 0 5px 5px;
+}
+
+.rateinfo {
+  display: flex;
+  padding-left: 10%;
+  width: 100%;
+}
+.ratingsimg {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  margin-left: -50px;
+  margin-right: 50px;
+}
+.rateintotxt {
+  font-size: medium;
+  color: white;
+  margin-top: 60px;
+  margin-left: 25px;
+  margin-right: -25px;
+  margin-top: 70px;
+  margin-bottom: -70px;
+  padding: 0;
+}
+.rateintotxt1 {
+  font-size: medium;
+  color: white;
+  margin-top: 60px;
+  margin-left: -130px;
+  margin-right: 130px;
+  margin-top: 70px;
+  margin-bottom: -70px;
+  padding: 0;
+}
+.itemname {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
