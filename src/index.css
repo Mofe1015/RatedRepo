@@ -106,7 +106,7 @@ body {
 .vl {
   border-left: 2px solid grey;
   height: 30px;
-  margin-top: 5px;
+  margin-top: 9px;
   margin-left: 10px;
 }
 .searchbardiv > button {
@@ -147,4 +147,10 @@ body {
   width: 18px;
   margin-top: 21px;
   padding-right: 2px;
+}
+
+.logo {
+  width: 400px;
+  height: 400px;
+  margin-left: 30%;
 }

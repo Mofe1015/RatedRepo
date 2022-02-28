@@ -25,7 +25,7 @@ function SearchBar(){
     <div className='searchbardiv'>
           <h1>Search</h1>
           <input  placeholder={"Restaurant, Movies, Gadgets, More ...."}></input>
-          <div className='v1'></div>
+          <div className='vl'></div>
           <h1>Location</h1>
           <input  placeholder={"Adrress, Street, City, State, Country "}></input>
           <button ><img src={require('../images/search.png') }  className="searchimg"/></button>
@@ -52,12 +52,14 @@ function BtmNav(){
 function HeaderItems(){
   return(
     <div className="Header">
-      <img src={require('../images/bannerimg11.jpg') }  className="bannerimg"></img>
+      <img src={require('../images/bannerimg14jpg.jpg') }  className="bannerimg"></img>
       <div className='innerbannerdiv'>
         <TopNav/>
         <SearchBar/>
         <BtmNav/>
+        <img src={require('../images/Rated-logos_white.png') }  className="logo"></img>     
       </div>
+      
       
     </div>
   )
