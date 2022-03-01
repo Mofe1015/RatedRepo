@@ -37,7 +37,7 @@ function SearchBar(){
 function BtmNav(){
   return(
     <div className='btmnavitemsdiv'>
-      <img className='navimg' src={require('../images/restaurant.png') } />
+      <img className='navimg' src={require('../images/restaurant3.png') } />
       <a href='#'>Restaurants</a>
       <img className='navimg' src={require('../images/phone.png') } />
       <a href='#'>Gadgets</a>

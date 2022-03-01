@@ -1,12 +1,15 @@
 import React from 'react';
 import '../index.css';
+import TopCardImg from'../images/itemimg2.jpg';
+import TopCardImg1 from'../images/itemimg1.jpg';
+import TopCardImg2 from'../images/restaurant1.png';
 
 
-function TopCardDiv(){
+function TopCardDiv(props){
     return(
         <div className='itmimgdiv'>
              <a href='#'>
-                <img className='itmimg' src={require('../images/itemimg2.jpg') } />
+                <img className='itmimg' src={props.img} />
              </a>
             
             
@@ -20,11 +23,11 @@ function BtmCardDiv(props){
             <div className='itemnameandlocationdiv'>
                
                 <div className='itemname'>
-                    <img className='itemnameimg' src={require('../images/restaurant1.png') } />
+                    <img className='itemnameimg' src={require('../images/restaurant3.png') } />
                     <a href='#' className='itemnametxt'>{props.itemName}</a>
                 </div>
                 <div className='itemlocation'>
-                <img className='itemnameimg' src={require(props.img) } />
+                <img className='itemnameimg' src={require('../images/mapicon.png') } />
                     <a href='#' className='itemnametxt'>{props.storeLocation}</a>
                 </div>
 
@@ -35,7 +38,7 @@ function BtmCardDiv(props){
                 </div>
                 <img src={require('../images/logocrop1.png') }  className="ratingsimg"></img>
                 <div className='rateintotxtdiv1'>
-                    <h1 className='rateintotxt1'>props.rateinfo</h1>
+                    <h1 className='rateintotxt1'>{props.Rating}</h1>
                 </div>
                 
             </div>
@@ -45,31 +48,39 @@ function BtmCardDiv(props){
 };
 function FullCard(){
     return(
-        <div className='fullcard'>
-            <TopCardDiv
-                img = "../images/mapicon.png "
-            />
-            <BtmCardDiv
-                itemName = "Pizza-Hut (Pepperoni Pizza)"
-                storeLocation = "1101 W Jackson, IL 60607"
-                country = "USA"
-                Rating = "5k+"
-            />
-                
-        </div>
+        <div className='Hrateddiv'>
+            <div className='fullcard'>
+                <TopCardDiv
+                    img = {TopCardImg}
+                />
+                <BtmCardDiv
+                    itemName = "Pizza-Hut (Pepperoni Pizza)"
+                    storeLocation = "1101 W Jackson, IL 60607"
+                    country = "USA"
+                    Rating = "5k+"
+                />
+            </div>
+
+            <div className='fullcard'>
+                <TopCardDiv
+                    img = {TopCardImg2}
+                />
+                <BtmCardDiv
+                    itemName = "Burger-place (beef burger)"
+                    storeLocation = "23rd N paulista, SC 5220"
+                    country = "BR"
+                    Rating = "12k+"
+                />
+            </div>
+
+        </div>  
     )
 }
 
-function CardItems(){
-    return(
-        <div className='Hrateddiv'>
-            <FullCard/>
-        </div>
-    )
-};
+
 
 export default function Card(){
     return(
-        <CardItems />
+        <FullCard />
     )
 };
