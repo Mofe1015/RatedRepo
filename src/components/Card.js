@@ -14,28 +14,28 @@ function TopCardDiv(){
     )
 };
 
-function BtmCardDiv(){
+function BtmCardDiv(props){
     return(
         <div className='btmcarddiv'>
             <div className='itemnameandlocationdiv'>
                
                 <div className='itemname'>
                     <img className='itemnameimg' src={require('../images/restaurant1.png') } />
-                    <a href='#' className='itemnametxt'>Pizza-Hut (Pepperoni Pizza)</a>
+                    <a href='#' className='itemnametxt'>{props.itemName}</a>
                 </div>
                 <div className='itemlocation'>
-                <img className='itemnameimg' src={require('../images/mapicon.png') } />
-                    <a href='#' className='itemnametxt'>1101 W Jackson, IL 60607</a>
+                <img className='itemnameimg' src={require(props.img) } />
+                    <a href='#' className='itemnametxt'>{props.storeLocation}</a>
                 </div>
 
             </div>
             <div className='rateinfo'>
                 <div className='rateintotxtdiv'>
-                    <h1 className='rateintotxt'>USA</h1>
+                    <h1 className='rateintotxt'>{props.country}</h1>
                 </div>
                 <img src={require('../images/logocrop1.png') }  className="ratingsimg"></img>
                 <div className='rateintotxtdiv1'>
-                    <h1 className='rateintotxt1'>5k+</h1>
+                    <h1 className='rateintotxt1'>props.rateinfo</h1>
                 </div>
                 
             </div>
@@ -46,15 +46,16 @@ function BtmCardDiv(){
 function FullCard(){
     return(
         <div className='fullcard'>
-            <TopCardDiv>
-                img = "require('../images/restaurant1.png') "
-            </TopCardDiv>
-            <BtmCardDiv>
+            <TopCardDiv
+                img = "../images/mapicon.png "
+            />
+            <BtmCardDiv
                 itemName = "Pizza-Hut (Pepperoni Pizza)"
                 storeLocation = "1101 W Jackson, IL 60607"
                 country = "USA"
                 Rating = "5k+"
-            </BtmCardDiv>
+            />
+                
         </div>
     )
 }
