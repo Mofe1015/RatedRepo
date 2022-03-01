@@ -5,11 +5,11 @@ import TopCardImg1 from'../images/itemimg1.jpg';
 import TopCardImg2 from'../images/restaurant1.png';
 
 
-function TopCardDiv(props){
+function TopCardDiv({img}){
     return(
         <div className='itmimgdiv'>
              <a href='#'>
-                <img className='itmimg' src={props.img} />
+                <img className='itmimg' src={img} />
              </a>
             
             
@@ -17,28 +17,28 @@ function TopCardDiv(props){
     )
 };
 
-function BtmCardDiv(props){
+function BtmCardDiv({itemName, storeLocation, country, Rating}){
     return(
         <div className='btmcarddiv'>
             <div className='itemnameandlocationdiv'>
                
                 <div className='itemname'>
                     <img className='itemnameimg' src={require('../images/restaurant3.png') } />
-                    <a href='#' className='itemnametxt'>{props.itemName}</a>
+                    <a href='#' className='itemnametxt'>{itemName}</a>
                 </div>
                 <div className='itemlocation'>
                 <img className='itemnameimg' src={require('../images/mapicon.png') } />
-                    <a href='#' className='itemnametxt'>{props.storeLocation}</a>
+                    <a href='#' className='itemnametxt'>{storeLocation}</a>
                 </div>
 
             </div>
             <div className='rateinfo'>
                 <div className='rateintotxtdiv'>
-                    <h1 className='rateintotxt'>{props.country}</h1>
+                    <h1 className='rateintotxt'>{country}</h1>
                 </div>
                 <img src={require('../images/logocrop1.png') }  className="ratingsimg"></img>
                 <div className='rateintotxtdiv1'>
-                    <h1 className='rateintotxt1'>{props.Rating}</h1>
+                    <h1 className='rateintotxt1'>{Rating}</h1>
                 </div>
                 
             </div>
