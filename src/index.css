@@ -160,10 +160,17 @@ body {
   height: 1000px;
   margin-left: 10%;
   margin-top: 20px;
+  display: flex;
+}
+.fullcard {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .itmimgdiv {
   width: 250px;
   height: 200px;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
 }
 .itmimg {
   width: 100%;
@@ -178,38 +185,88 @@ body {
 
 .rateinfo {
   display: flex;
-  padding-left: 10%;
+  padding-top: 5px;
+  padding-left: 12%;
   width: 100%;
+  height: 50%;
 }
 .ratingsimg {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: -50px;
-  margin-left: -50px;
-  margin-right: 50px;
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: -0px;
+  margin-left: -60px;
+  margin-right: -60px;
+}
+.rateintotxtdiv {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 20px;
+  width: 60px;
+  margin-right: -5px;
+  margin-top: 0px;
+  margin-bottom: -0px;
 }
 .rateintotxt {
+  margin: auto;
   font-size: medium;
   color: white;
-  margin-top: 60px;
-  margin-left: 25px;
-  margin-right: -25px;
-  margin-top: 70px;
-  margin-bottom: -70px;
   padding: 0;
+}
+.rateintotxtdiv1 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 20px;
+  width: 60px;
+  margin-left: -3px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: -0px;
 }
 .rateintotxt1 {
+  margin: auto;
   font-size: medium;
   color: white;
-  margin-top: 60px;
-  margin-left: -130px;
-  margin-right: 130px;
-  margin-top: 70px;
-  margin-bottom: -70px;
   padding: 0;
 }
-.itemname {
+
+.itemnameandlocationdiv {
+  height: 50%;
   padding: 0px;
   margin: 0px;
   color: white;
+  overflow: hidden;
+}
+
+.itemname {
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+  width: 100%;
+  height: 50%;
+}
+.itemnameimg {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  padding-left: 10px;
+}
+.itemnametxt {
+  align-self: center;
+  color: white;
+  padding-left: 10px;
+  font-size: medium;
+  text-decoration: none;
+}
+.itemnametxt:hover {
+  text-decoration: underline;
+}
+.itemlocation {
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
 }
