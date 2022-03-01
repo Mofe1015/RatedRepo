@@ -1,9 +1,6 @@
 import React from 'react';
 import '../index.css';
-import TopCardImg from'../images/itemimg2.jpg';
-import TopCardImg1 from'../images/itemimg1.jpg';
-import TopCardImg2 from'../images/restaurant1.png';
-
+import CardData from './CardData';
 
 function TopCardDiv({img}){
     return(
@@ -47,32 +44,24 @@ function BtmCardDiv({itemName, storeLocation, country, Rating}){
     )
 };
 function FullCard(){
+    const cardElerment = CardData.map((carddata) => {
+        return(
+            <div className='fullcard'>
+                <TopCardDiv
+                    img = {carddata.image}
+                />
+                <BtmCardDiv
+                    itemName = {carddata.itemName}
+                    storeLocation = {carddata.storeLocation}
+                    country = {carddata.country}
+                    Rating = {carddata.Rating}
+                />
+            </div>
+        )
+    })
     return(
-        <div className='Hrateddiv'>
-            <div className='fullcard'>
-                <TopCardDiv
-                    img = {TopCardImg}
-                />
-                <BtmCardDiv
-                    itemName = "Pizza-Hut (Pepperoni Pizza)"
-                    storeLocation = "1101 W Jackson, IL 60607"
-                    country = "USA"
-                    Rating = "5k+"
-                />
-            </div>
-
-            <div className='fullcard'>
-                <TopCardDiv
-                    img = {TopCardImg2}
-                />
-                <BtmCardDiv
-                    itemName = "Burger-place (beef burger)"
-                    storeLocation = "23rd N paulista, SC 5220"
-                    country = "BR"
-                    Rating = "12k+"
-                />
-            </div>
-
+        <div className='Highlyrateddiv'>
+            {cardElerment}   
         </div>  
     )
 }
