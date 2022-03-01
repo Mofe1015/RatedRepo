@@ -46,8 +46,15 @@ function BtmCardDiv(){
 function FullCard(){
     return(
         <div className='fullcard'>
-            <TopCardDiv/>
-            <BtmCardDiv/>
+            <TopCardDiv>
+                img = "require('../images/restaurant1.png') "
+            </TopCardDiv>
+            <BtmCardDiv>
+                itemName = "Pizza-Hut (Pepperoni Pizza)"
+                storeLocation = "1101 W Jackson, IL 60607"
+                country = "USA"
+                Rating = "5k+"
+            </BtmCardDiv>
         </div>
     )
 }
