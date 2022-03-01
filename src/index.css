@@ -4,6 +4,8 @@ body {
   padding: 0px;
   font-family: Inter, sans-serif;
 }
+
+/*HEADER*/
 .Header {
   height: 650px;
   overflow: hidden;
@@ -76,6 +78,7 @@ body {
   color: grey;
 }
 
+/*SEARCH BAR*/
 .searchbardiv {
   margin-top: 20%;
   width: 100%;
@@ -125,9 +128,10 @@ body {
 .searchimg {
   width: 20px;
 }
+/*SEARCH BAR END*/
+
 .btmnavitemsdiv {
   display: flex;
-
   color: white;
   margin-left: 25%;
 }
@@ -156,14 +160,19 @@ body {
   height: 400px;
   margin-left: 30%;
 }
+/*HEADER END*/
 
+/*HIGHLY RATED*/
 .Highlyrateddiv {
   width: 80%;
-  height: 1000px;
   margin-left: 10%;
   margin-top: 20px;
   display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 50px;
 }
+/*HIGHLY RATED CARD*/
 .fullcard {
   margin-left: 10px;
   margin-right: 10px;
@@ -272,3 +281,6 @@ body {
   width: 100%;
   height: 50%;
 }
+/*HIGHLY RATED CARD END*/
+
+/*HIGHLY RATED*/
