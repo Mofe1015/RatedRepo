@@ -170,7 +170,7 @@ body {
 }
 .rightbtn {
   margin-right: auto;
-  margin-left: -15px;
+  margin-left: -35px;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 0;
@@ -180,7 +180,7 @@ body {
 }
 .leftbtn {
   margin-left: auto;
-  margin-right: -15px;
+  margin-right: -50px;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 0;
@@ -191,9 +191,8 @@ body {
 .myborder {
   margin-top: 5%;
   margin-bottom: 5%;
-  border: solid 1px;
   border-radius: 5px;
-  width: 75%;
+  width: 90%;
   overflow: hidden;
   padding-left: 20px;
   padding-right: 20px;
@@ -204,7 +203,9 @@ body {
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   border-radius: 5px;
+  scroll-behavior: smooth;
 }
 /*HIGHLY RATED CARD*/
 .fullcard {

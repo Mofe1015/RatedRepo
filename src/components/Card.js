@@ -67,10 +67,10 @@ function FullCard(){
          buttonRight = document.getElementById('slideRight');
          buttonLeft = document.getElementById('slideLeft');
          buttonRight.onclick = function () {
-        document.getElementById('container').scrollLeft += 900;
+        document.getElementById('container').scrollLeft += 950;
           };
         buttonLeft.onclick = function () {
-            document.getElementById('container').scrollLeft -= 900;
+            document.getElementById('container').scrollLeft -= 950;
             };
     };
     
