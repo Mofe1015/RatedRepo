@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './components/Header';
 import Card from './components/Card';
+import TopRated from './components/TopRated';
 
 
 
@@ -11,7 +12,7 @@ import Card from './components/Card';
 ReactDOM.render(
   <div>
     <Header />
-    <Card/>
+    <TopRated/>
   </div>,
   document.getElementById('root')
 );
