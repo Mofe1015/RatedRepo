@@ -27,5 +27,71 @@ export default [
         availability: "closed"
         
     },
+    {
+        id: 2,
+        id1: 2.1,
+        image: TopCardImg2,
+        itemName: "Burger-place (beef burger)",
+        storeLocation: "23rd N paulista, SC 5220",
+        country: "BR",
+        Rating: "12k+",
+        availability: "closed"
+        
+    },
+    {
+        id: 2,
+        id1: 2.1,
+        image: TopCardImg2,
+        itemName: "Burger-place (beef burger)",
+        storeLocation: "23rd N paulista, SC 5220",
+        country: "BR",
+        Rating: "12k+",
+        availability: "closed"
+        
+    },
+    {
+        id: 2,
+        id1: 2.1,
+        image: TopCardImg2,
+        itemName: "Burger-place (beef burger)",
+        storeLocation: "23rd N paulista, SC 5220",
+        country: "BR",
+        Rating: "12k+",
+        availability: "closed"
+        
+    },
+    {
+        id: 2,
+        id1: 2.1,
+        image: TopCardImg2,
+        itemName: "Burger-place (beef burger)",
+        storeLocation: "23rd N paulista, SC 5220",
+        country: "BR",
+        Rating: "12k+",
+        availability: "closed"
+        
+    },
+    {
+        id: 2,
+        id1: 2.1,
+        image: TopCardImg2,
+        itemName: "Burger-place (beef burger)",
+        storeLocation: "23rd N paulista, SC 5220",
+        country: "BR",
+        Rating: "12k+",
+        availability: "closed"
+        
+    },
+    {
+        id: 2,
+        id1: 2.1,
+        image: TopCardImg2,
+        itemName: "Burger-place (beef burger)",
+        storeLocation: "23rd N paulista, SC 5220",
+        country: "BR",
+        Rating: "12k+",
+        availability: "closed"
+        
+    },
 
 ]

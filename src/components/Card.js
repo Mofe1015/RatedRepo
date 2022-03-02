@@ -17,8 +17,9 @@ function TopCardDiv({img, badgeText}){
     return(
         <div className='itmimgdiv'>
              <a href='#'>
-                <div style={{ color: colorvar }} className="card--badge">{badgeTextvar}</div>
+               
                 <img className='itmimg' src={img} />
+                 <div style={{ color: colorvar }} className="card--badge">{badgeTextvar}</div>
 
              </a>
             
@@ -56,7 +57,25 @@ function BtmCardDiv({itemName, storeLocation, country, Rating}){
         </div>
     )
 };
+
 function FullCard(){
+    const leftbtn = <button id="slideLeft" type="button" className='leftbtn'>left</button>
+    const rightbtn =  <button id="slideRight" type="button" className='rightbtn'> right</button>
+    let buttonRight
+    let buttonLeft
+    window.onload = function(){    
+         buttonRight = document.getElementById('slideRight');
+         buttonLeft = document.getElementById('slideLeft');
+         buttonRight.onclick = function () {
+        document.getElementById('container').scrollLeft += 900;
+          };
+        buttonLeft.onclick = function () {
+            document.getElementById('container').scrollLeft -= 900;
+            };
+    };
+    
+
+    
     const cardElerment = CardData.map((carddata) => {
         return(
             <div className='fullcard'>
@@ -77,10 +96,18 @@ function FullCard(){
         )
     })
     return(
-        <div className='Highlyrateddiv'>
-            {cardElerment}   
-        </div>  
+        <div className='Highlyratedscroldiv'>
+            {leftbtn}
+            <div className='myborder'>
+                <div className='Highlyrateddiv' id='container'>
+                    {cardElerment}   
+                </div>  
+            </div>
+            {rightbtn}
+        </div>
+    
     )
+
 }
 
 
