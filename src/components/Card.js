@@ -2,11 +2,24 @@ import React from 'react';
 import '../index.css';
 import CardData from './CardData';
 
-function TopCardDiv({img}){
+function TopCardDiv({img, badgeText}){
+    let badgeTextvar
+    let colorvar
+    if (badgeText === "closed") {
+        badgeTextvar = "CLOSED"
+        colorvar = 'red'
+        
+    } else if (badgeText === "opened") {
+        badgeTextvar = "OPEN"
+        colorvar = 'green'
+    }
+    
     return(
         <div className='itmimgdiv'>
              <a href='#'>
+                <div style={{ color: colorvar }} className="card--badge">{badgeTextvar}</div>
                 <img className='itmimg' src={img} />
+
              </a>
             
             
@@ -47,10 +60,14 @@ function FullCard(){
     const cardElerment = CardData.map((carddata) => {
         return(
             <div className='fullcard'>
+                
                 <TopCardDiv
+                    key={carddata.id}
                     img = {carddata.image}
+                    badgeText = {carddata.availability}
                 />
                 <BtmCardDiv
+                    key={carddata.id1}
                     itemName = {carddata.itemName}
                     storeLocation = {carddata.storeLocation}
                     country = {carddata.country}
