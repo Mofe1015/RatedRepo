@@ -58,52 +58,56 @@ function BtmCardDiv({itemName, storeLocation, country, Rating}){
     )
 };
 
-function FullCard(){
-    const leftbtn = <button id="slideLeft" type="button" className='leftbtn'>left</button>
-    const rightbtn =  <button id="slideRight" type="button" className='rightbtn'> right</button>
+const fullCard = CardData.map((carddata) => {
+    return(
+        <div className='fullcard'>
+            <TopCardDiv
+                key={carddata.id}
+                img = {carddata.image}
+                badgeText = {carddata.availability}
+            />
+            <BtmCardDiv
+                key={carddata.id1}
+                itemName = {carddata.itemName}
+                storeLocation = {carddata.storeLocation}
+                country = {carddata.country}
+                Rating = {carddata.Rating}
+            />
+        </div>
+    )
+})
+
+function TopRated(){
+    const leftscrollbtn = <button id="slideLeft" type="button" className='leftbtn'>
+        <img className='scrollimg' src={require('../images/arrowleft.png') } />
+    </button>
+    const rightscrollbtn =  <button id="slideRight" type="button" className='rightbtn'> 
+        <img className='scrollimg' src={require('../images/arrowright.png') } />
+    </button>
     let buttonRight
     let buttonLeft
     window.onload = function(){    
          buttonRight = document.getElementById('slideRight');
          buttonLeft = document.getElementById('slideLeft');
          buttonRight.onclick = function () {
-        document.getElementById('container').scrollLeft += 950;
+        document.getElementById('container').scrollLeft += 900;
           };
-        buttonLeft.onclick = function () {
-            document.getElementById('container').scrollLeft -= 950;
+        buttonLeft.onclick = function () {  
+            document.getElementById('container').scrollLeft -= 900;
             };
     };
     
-
     
-    const cardElerment = CardData.map((carddata) => {
-        return(
-            <div className='fullcard'>
-                
-                <TopCardDiv
-                    key={carddata.id}
-                    img = {carddata.image}
-                    badgeText = {carddata.availability}
-                />
-                <BtmCardDiv
-                    key={carddata.id1}
-                    itemName = {carddata.itemName}
-                    storeLocation = {carddata.storeLocation}
-                    country = {carddata.country}
-                    Rating = {carddata.Rating}
-                />
-            </div>
-        )
-    })
+    
     return(
         <div className='Highlyratedscroldiv'>
-            {leftbtn}
+            {leftscrollbtn}
             <div className='myborder'>
                 <div className='Highlyrateddiv' id='container'>
-                    {cardElerment}   
+                    {fullCard}   
                 </div>  
             </div>
-            {rightbtn}
+            {rightscrollbtn}
         </div>
     
     )
@@ -114,6 +118,6 @@ function FullCard(){
 
 export default function Card(){
     return(
-        <FullCard />
+        <TopRated />
     )
 };

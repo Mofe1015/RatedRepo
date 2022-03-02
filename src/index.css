@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Inter, sans-serif;
+  background-color: #000000;
 }
 
 /*HEADER*/
@@ -170,13 +171,21 @@ body {
 }
 .rightbtn {
   margin-right: auto;
-  margin-left: -35px;
+  margin-left: -45px;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 0;
   width: 40px;
-  height: 50px;
-  background-color: grey;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rightbtn:hover {
+  background-color: #666666;
 }
 .leftbtn {
   margin-left: auto;
@@ -184,9 +193,21 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   z-index: 0;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  height: 55px;
   width: 40px;
-  background-color: grey;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.leftbtn:hover {
+  background-color: #666666;
+}
+.scrollimg {
+  width: 30px;
+  margin: auto;
 }
 .myborder {
   margin-top: 5%;
@@ -237,7 +258,7 @@ body {
 .btmcarddiv {
   width: 250px;
   height: 150px;
-  background-color: black;
+  background-color: #1a1a1a;
   border-radius: 0 0 5px 5px;
 }
 
