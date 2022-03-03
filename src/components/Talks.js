@@ -24,15 +24,39 @@ const AllTalks = TalksData.map((talksdata) => {
 })
 
 function TalksTotal(){
-    
 
+    var numberOfTimes = TalksData.length;
+    let delay = 10000;
+    let myTimeout
+
+    function automaticScroll(){
+        
+        for (let i = 0; i < numberOfTimes; i++) {
+            myTimeout=setTimeout( goRightAutomatic, delay * i);
+            console.log(1)
+        }
+    }
+    automaticScroll()
+    function goRightAutomatic () {  
+        
+        document.getElementById('talksContainer').scrollLeft += (800);
+        if ((document.getElementById('talksContainer').offsetWidth +  document.getElementById('talksContainer').scrollLeft) >= 800*numberOfTimes){
+            document.getElementById('talksContainer').scrollLeft -= 800*numberOfTimes;
+            var timeoutID = setTimeout(function(){automaticScroll()}, delay);
+        }
+
+    };
     function goLeft () {
-        document.getElementById('talksContainer').scrollLeft -= 900;
+        document.getElementById('talksContainer').scrollLeft -= 800;
+        
     };
     function goRight () {  
-        document.getElementById('talksContainer').scrollLeft += 900;
+        document.getElementById('talksContainer').scrollLeft += 800;
     };
-         
+    
+    
+
+    
 
     return(
         <div className='talkstotal'>

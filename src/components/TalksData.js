@@ -10,4 +10,12 @@ export default [
         id: 2,
         image: TalksImg,
     },
+    {
+        id: 3,
+        image: TalksImg,
+    },
+    {
+        id: 4,
+        image: TalksImg,
+    },
 ]
