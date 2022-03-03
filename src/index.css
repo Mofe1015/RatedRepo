@@ -369,10 +369,48 @@ body {
 .changingtalks {
   height: 500px;
   width: 800px;
+  border-radius: 5px;
+  display: flex;
   background-color: green;
   overflow-x: scroll;
   overflow-y: hidden;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   scroll-behavior: smooth;
 }
+.talksrightbtn {
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 40px;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: -800px;
+  margin-left: 720px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.talksrightbtn:hover {
+  background-color: #666666;
+}
+.talksleftbtn {
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 40px;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.talksleftbtn:hover {
+  background-color: #666666;
+}
 /*CHANGING TALKS END*/
+
+/*TALKS END*/
