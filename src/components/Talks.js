@@ -16,34 +16,35 @@ const AllTalks = TalksData.map((talksdata) => {
     return(
         <div>
             <TalksScrollInfo
+                key = {talksdata.id}
                 img = {talksdata.image}
             />
         </div>
     )
 })
 
-function ChangingTalks(){
-    return(
-        <div className='changingtalks'>
-           {AllTalks}
-        </div>
-    )
-    
-};
-
 function TalksTotal(){
-    const leftscrollbtn = <button id="talksslideLeft" type="button" className='talksleftbtn'>
-        <img className='scrollimg' src={require('../images/arrowleft.png') } />
-    </button>
-    const rightscrollbtn =  <button id="talksslideRight" type="button" className='talksrightbtn'> 
-        <img className='scrollimg' src={require('../images/arrowright.png') } />
-    </button>
+    
+
+    function goLeft () {
+        document.getElementById('talksContainer').scrollLeft -= 900;
+    };
+    function goRight () {  
+        document.getElementById('talksContainer').scrollLeft += 900;
+    };
+         
 
     return(
         <div className='talkstotal'>
-            {leftscrollbtn}
-            {rightscrollbtn}
-            <ChangingTalks/>
+            <button onClick={goLeft} type="button" className='talksleftbtn'>
+                <img className='scrollimg' src={require('../images/arrowleft.png') } />
+            </button>
+            <button onClick={goRight} type="button" className='talksrightbtn'> 
+                <img className='scrollimg' src={require('../images/arrowright.png') } />
+            </button>
+            <div className='changingtalks' id='talksContainer'>
+                {AllTalks}
+            </div>
         </div>
     )
 };

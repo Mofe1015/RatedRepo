@@ -14,17 +14,15 @@ export default function TopRated(){
     let buttonRight
     let buttonLeft
     window.onload = function(){    
-         buttonRight = document.getElementById('slideRight');
-         buttonLeft = document.getElementById('slideLeft');
-         buttonRight.onclick = function () {
-        document.getElementById('container').scrollLeft += 900;
-          };
+        buttonRight = document.getElementById('slideRight');
+        buttonLeft = document.getElementById('slideLeft');
+        buttonRight.onclick = function () {
+            document.getElementById('container').scrollLeft += 900;
+        };
         buttonLeft.onclick = function () {  
             document.getElementById('container').scrollLeft -= 900;
-            };
+        };
     };
-    
-    
     
     return(
         <div className='Highlyratedscroldiv'>
