@@ -366,7 +366,7 @@ body {
 }
 /*CHANGING TALKS*/
 .changingtalks {
-  height: 500px;
+  height: 550px;
   width: 800px;
   border-radius: 5px;
   display: flex;
@@ -375,6 +375,10 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+.talksimg {
+  width: 800px;
+  height: 550px;
 }
 .talksrightbtn {
   z-index: 0;
@@ -410,10 +414,7 @@ body {
 .talksleftbtn:hover {
   background-color: #666666;
 }
-.talksimg {
-  width: 800px;
-  height: 500px;
-}
+
 /*CHANGING TALKS END*/
 
 /*TALKS END*/

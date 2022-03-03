@@ -54,6 +54,12 @@ function TalksTotal(){
         document.getElementById('talksContainer').scrollLeft += 800;
     };
     
+    function MouseOver(event) {
+        console.log("over")
+      }
+    function MouseOut(event){
+        event.target.style.background="";
+    }
     
 
     
@@ -66,7 +72,7 @@ function TalksTotal(){
             <button onClick={goRight} type="button" className='talksrightbtn'> 
                 <img className='scrollimg' src={require('../images/arrowright.png') } />
             </button>
-            <div className='changingtalks' id='talksContainer'>
+            <div onMouseOver={MouseOver} onMouseOut={MouseOut} className='changingtalks' id='talksContainer'>
                 {AllTalks}
             </div>
         </div>
