@@ -373,7 +373,7 @@ body {
   background-color: green;
   overflow-x: scroll;
   overflow-y: hidden;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+
   scroll-behavior: smooth;
 }
 .talksrightbtn {
@@ -409,6 +409,10 @@ body {
 }
 .talksleftbtn:hover {
   background-color: #666666;
+}
+.talksimg {
+  width: 800px;
+  height: 500px;
 }
 /*CHANGING TALKS END*/
 
