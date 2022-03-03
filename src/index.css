@@ -373,6 +373,7 @@ body {
   background-color: green;
   overflow-x: scroll;
   overflow-y: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 .talksrightbtn {
