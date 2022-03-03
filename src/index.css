@@ -4,6 +4,7 @@ body {
   padding: 0px;
   font-family: Inter, sans-serif;
   background-color: #000000;
+  color: white;
 }
 
 /*HEADER*/
@@ -351,4 +352,27 @@ body {
 }
 /*HIGHLY RATED CARD END*/
 
-/*HIGHLY RATED*/
+/*HIGHLY RATED END */
+
+/*TALKS*/
+.talkstotal {
+  margin-top: 70px;
+  margin-left: 10%;
+  border-radius: 5px;
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+
+  background-color: blue;
+}
+/*CHANGING TALKS*/
+.changingtalks {
+  height: 500px;
+  width: 800px;
+  background-color: green;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  scroll-behavior: smooth;
+}
+/*CHANGING TALKS END*/

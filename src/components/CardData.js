@@ -46,7 +46,7 @@ export default [
         storeLocation: "23rd N paulista, SC 5220",
         country: "BR",
         Rating: "12k+",
-        availability: "closed"
+        availability: "opened"
         
     },
     {
@@ -79,7 +79,7 @@ export default [
         storeLocation: "23rd N paulista, SC 5220",
         country: "BR",
         Rating: "12k+",
-        availability: "closed"
+        availability: "opened"
         
     },
     {

@@ -58,7 +58,7 @@ function BtmCardDiv({itemName, storeLocation, country, Rating}){
     )
 };
 
-const fullCards = CardData.map((carddata) => {
+const AllCards = CardData.map((carddata) => {
     return(
         <div className='fullcard'>
             <TopCardDiv
@@ -84,7 +84,7 @@ const fullCards = CardData.map((carddata) => {
 export default function Card(){
     return(
         <>
-            {fullCards}
+            {AllCards}
         </>
         
     )

@@ -4,6 +4,7 @@ import './index.css';
 import Header from './components/Header';
 import Card from './components/Card';
 import TopRated from './components/TopRated';
+import Talks from './components/Talks';
 
 
 
@@ -12,6 +13,7 @@ import TopRated from './components/TopRated';
 ReactDOM.render(
   <div>
     <Header />
+    <Talks/>
     <TopRated/>
   </div>,
   document.getElementById('root')
