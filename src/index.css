@@ -363,6 +363,20 @@ body {
   overflow: hidden;
   display: flex;
 }
+.talkstoptext {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  margin-right: -105px;
+  z-index: 0;
+}
+.talkstoptexttype {
+  font-size: 25px;
+  margin-top: 20px;
+  padding-left: 110px;
+
+  z-index: 0;
+}
 /*CHANGING TALKS*/
 .changingtalks {
   height: 550px;
@@ -378,6 +392,17 @@ body {
 .talksimg {
   width: 800px;
   height: 550px;
+  display: flex;
+}
+.topratedname {
+  color: white;
+  padding-top: 100px;
+}
+.topratedinfo {
+  width: 800px;
+  height: 550px;
+
+  margin-top: -560px;
 }
 .talksrightbtn {
   z-index: 0;
@@ -393,6 +418,7 @@ body {
   margin-left: 720px;
   margin-top: auto;
   margin-bottom: auto;
+  position: relative;
 }
 .talksrightbtn:hover {
   background-color: #666666;
@@ -409,6 +435,7 @@ body {
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
+  position: relative;
 }
 .talksleftbtn:hover {
   background-color: #666666;
@@ -424,11 +451,13 @@ body {
   margin-left: auto;
   border-radius: 5px;
   overflow: hidden;
+  background-image: linear-gradient(#101010, #000000);
 }
 
-.recomendations > h1 {
+.talkstoptext1 {
   font-size: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 .recomendationcont {
   border-radius: 5px;
@@ -436,6 +465,35 @@ body {
   background-color: #666666;
   width: 400px;
   height: 155px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.recommendimgdiv {
+  width: 30%;
+  height: 100%;
+  background-color: red;
+}
+.recommend-details {
+  width: 70%;
+  height: 100%;
+  background-color: blue;
+  margin: 0;
+}
+.recommend-type {
+  width: 100%;
+  height: 38%;
+  background-color: green;
+  margin: 0;
+  margin-bottom: 2%;
+}
+.other-recommend-details {
+  width: 100%;
+  height: 58%;
+  background-color: yellow;
+  margin: 0;
+  margin-top: 2%;
 }
 /*RECOMENDATIONS END */
 

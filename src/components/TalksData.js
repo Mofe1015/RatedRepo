@@ -9,17 +9,29 @@ export default [
     {
         id: 1,
         image: TalksImg7,
+        name: "1",
+        type: "Movie"
+
     },
     {
         id: 2,
         image: TalksImg1,
+        name: "2",
+        type: "Resturant"
+
     },
     {
         id: 3,
         image: TalksImg2,
+        name: "3",
+        type: "Gadget"
+
     },
     {
         id: 4,
         image: TalksImg3,
+        name: "4",
+        type: "Service"
+
     },
 ]

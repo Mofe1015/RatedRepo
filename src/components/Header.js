@@ -60,7 +60,6 @@ function HeaderItems(){
         <img src={require('../images/Rated-logos_white.png') }  className="logo"></img>     
       </div>
       
-      
     </div>
   )
 }

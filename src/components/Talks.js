@@ -8,6 +8,10 @@ function TalksScrollInfo(props){
     return(
         <div>
             <img className='talksimg' src={props.img} />
+            <div className='topratedinfo'>
+                <h1 className='talkstoptexttype'>{props.type}</h1>
+                <p className='topratedname'></p>
+            </div>
         </div>
     )
 }
@@ -18,6 +22,8 @@ const AllTalks = TalksData.map((talksdata) => {
             <TalksScrollInfo
                 key = {talksdata.id}
                 img = {talksdata.image}
+                name = {talksdata.name}
+                type = {talksdata.type}
             />
         </div>
     )
@@ -26,11 +32,22 @@ const AllTalks = TalksData.map((talksdata) => {
 function ReccomdationCont(){
     return(
         <div className='recomendationcont'>
+            <div className='recommendimgdiv'>
+                
+            </div>
+            <div className='recommend-details'>
+                <div className='recommend-type'>
 
+                </div>
+                <div className='other-recommend-details'>
+
+                </div>
+
+            </div>
         </div>
     )
 };
-const Reccomdation = RecommendData.map((recdata) => {
+const Reccomdation = RecommendData.map((recommenddata) => {
     return(
         <ReccomdationCont/>
     )
@@ -55,7 +72,7 @@ function TalksTotal(){
         document.getElementById('talksContainer').scrollLeft += (800);
         if ((document.getElementById('talksContainer').offsetWidth +  document.getElementById('talksContainer').scrollLeft) >= 800*numberOfTimes){
             document.getElementById('talksContainer').scrollLeft -= 800*numberOfTimes;
-            var timeoutID = setTimeout(function(){automaticScroll()}, delay);
+            setTimeout(function(){automaticScroll()}, delay);
         }
 
     };
@@ -78,17 +95,22 @@ function TalksTotal(){
 
     return(
         <div className='talkstotal'>
+            <h1 className='talkstoptext'>Top Rated:</h1>
+
             <button onClick={goLeft} type="button" className='talksleftbtn'>
                 <img className='scrollimg' src={require('../images/arrowleft.png') } />
             </button>
+
             <button onClick={goRight} type="button" className='talksrightbtn'> 
                 <img className='scrollimg' src={require('../images/arrowright.png') } />
             </button>
+
             <div onMouseOver={MouseOver} onMouseOut={MouseOut} className='changingtalks' id='talksContainer'>
                 {AllTalks}
             </div>
+            
             <div className='recomendations'>
-                <h1>Recommended For This Week</h1>
+                <h1 className='talkstoptext1'>Recommended For This Week</h1>
                 {Reccomdation}
             </div>
         </div>
