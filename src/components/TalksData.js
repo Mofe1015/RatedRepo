@@ -3,6 +3,8 @@ import TalksImg1 from'../images/talksimg1.jpg';
 import TalksImg2 from'../images/talksimg2.jpg';
 import TalksImg3 from'../images/talksimg3.jpg';
 import TalksImg7 from'../images/talksimg7.png';
+import TalksImg8 from'../images/talksimg8.jpg';
+import TalksImg9 from'../images/talksimg9.jpg';
 
 
 export default [
@@ -15,7 +17,7 @@ export default [
     },
     {
         id: 2,
-        image: TalksImg1,
+        image: TalksImg9,
         name: "2",
         type: "Resturant"
 
