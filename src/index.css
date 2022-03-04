@@ -362,7 +362,6 @@ body {
   width: 80%;
   overflow: hidden;
   display: flex;
-  background-color: blue;
 }
 /*CHANGING TALKS*/
 .changingtalks {
@@ -416,5 +415,28 @@ body {
 }
 
 /*CHANGING TALKS END*/
+
+/*RECOMENDATIONS*/
+
+.recomendations {
+  width: 400px;
+  height: 550px;
+  margin-left: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.recomendations > h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.recomendationcont {
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: #666666;
+  width: 400px;
+  height: 155px;
+}
+/*RECOMENDATIONS END */
 
 /*TALKS END*/

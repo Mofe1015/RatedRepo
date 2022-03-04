@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 import TalksData from './TalksData';
-
+import RecommendData from './RecommendData';
 
 
 function TalksScrollInfo(props){
@@ -21,7 +21,20 @@ const AllTalks = TalksData.map((talksdata) => {
             />
         </div>
     )
-})
+});
+
+function ReccomdationCont(){
+    return(
+        <div className='recomendationcont'>
+
+        </div>
+    )
+};
+const Reccomdation = RecommendData.map((recdata) => {
+    return(
+        <ReccomdationCont/>
+    )
+});
 
 function TalksTotal(){
 
@@ -53,13 +66,12 @@ function TalksTotal(){
     function goRight () {  
         document.getElementById('talksContainer').scrollLeft += 800;
     };
-    
     function MouseOver(event) {
         console.log("over")
-      }
+      };
     function MouseOut(event){
         event.target.style.background="";
-    }
+    };
     
 
     
@@ -74,6 +86,10 @@ function TalksTotal(){
             </button>
             <div onMouseOver={MouseOver} onMouseOut={MouseOut} className='changingtalks' id='talksContainer'>
                 {AllTalks}
+            </div>
+            <div className='recomendations'>
+                <h1>Recommended For This Week</h1>
+                {Reccomdation}
             </div>
         </div>
     )
