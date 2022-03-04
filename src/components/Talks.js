@@ -29,15 +29,15 @@ const AllTalks = TalksData.map((talksdata) => {
     )
 });
 
-function ReccomdationCont(){
+function ReccomdationCont(props){
     return(
         <div className='recomendationcont'>
             <div className='recommendimgdiv'>
-                
+                <img className='reco-img' src={props.img} />
             </div>
             <div className='recommend-details'>
                 <div className='recommend-type'>
-
+                    
                 </div>
                 <div className='other-recommend-details'>
 
@@ -49,7 +49,10 @@ function ReccomdationCont(){
 };
 const Reccomdation = RecommendData.map((recommenddata) => {
     return(
-        <ReccomdationCont/>
+        <ReccomdationCont
+            key = {recommenddata.id}
+            img = {recommenddata.image}
+        />
     )
 });
 

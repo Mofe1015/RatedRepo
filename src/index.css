@@ -460,7 +460,7 @@ body {
 .recomendationcont {
   border-radius: 5px;
   margin-top: 15px;
-  background-color: #666666;
+
   width: 400px;
   height: 155px;
   display: flex;
@@ -471,7 +471,13 @@ body {
 .recommendimgdiv {
   width: 30%;
   height: 100%;
-  background-color: red;
+  overflow: hidden;
+  display: flex;
+}
+.reco-img {
+  width: 90%;
+  height: 100%;
+  margin: auto;
 }
 .recommend-details {
   width: 70%;
