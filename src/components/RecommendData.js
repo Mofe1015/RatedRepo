@@ -7,18 +7,21 @@ export default[
         id: 1,
         image: movieimg,
         type: "Movie",
-        caption: "Movie Night"
+        caption: "Movie Night",
+        itemname: "Spider-Man: No Way Home "
     },
     {
         id: 2,
         image: restaurantimg,
         type: "Restaurant",
-        caption: "Power Breakfast"
+        caption: "Power Breakfast",
+        itemname: ""
     },
-     {
+    {
         id: 3,
         image: placeimg,
         type: "Place",
-        caption: "Pet Care"
+        caption: "Pet Care",
+        itemname: ""
     },
 ]
