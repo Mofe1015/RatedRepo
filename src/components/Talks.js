@@ -14,7 +14,7 @@ function TalksScrollInfo(props){
             </div>
         </div>
     )
-}
+}  
 
 const AllTalks = TalksData.map((talksdata) => {
     return(
@@ -37,6 +37,7 @@ function ReccomdationCont(props){
             </div>
             <div className='recommend-details'>
                 <div className='recommend-type'>
+                    <p>{props.caption}</p>
                     
                 </div>
                 <div className='other-recommend-details'>
@@ -52,6 +53,7 @@ const Reccomdation = RecommendData.map((recommenddata) => {
         <ReccomdationCont
             key = {recommenddata.id}
             img = {recommenddata.image}
+            caption = {recommenddata.caption}
         />
     )
 });
