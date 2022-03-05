@@ -66,7 +66,6 @@ function TalksTotal(){
         
         for (let i = 0; i < numberOfTimes; i++) {
             myTimeout=setTimeout( goRightAutomatic, delay * i);
-            console.log(1)
         }
     }
     automaticScroll()
