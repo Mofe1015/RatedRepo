@@ -49,6 +49,9 @@ function ReccomdationCont(props){
                     <div className='recommend-description'>
                          <p>{props.itemdescription}</p>
                     </div>
+                    <div className='recommend-location'>
+                         <p>{props.itemlocation}</p>
+                    </div>
                     
                 </div>
 
@@ -66,6 +69,7 @@ const Reccomdation = RecommendData.map((recommenddata) => {
             caption = {recommenddata.caption}
             itemname = {recommenddata.itemname}
             itemdescription = {recommenddata.itemdescription}
+            itemlocation = {recommenddata.itemlocation}
         />
     )
 });
