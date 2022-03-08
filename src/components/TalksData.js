@@ -11,28 +11,33 @@ export default [
     {
         id: 1,
         image: TalksImg7,
-        name: "1",
+        name: "DOCTOR STRANGE IN  THE MULTIVERSE OF MADNESS ",
+        caption: "Catch the latest Doctor Strange movie",
         type: "Movie"
 
     },
     {
         id: 2,
         image: TalksImg9,
-        name: "2",
+        name: "FLEICSH HAUS",
+        caption: "the house of stake",
         type: "Resturant"
+        
 
     },
     {
         id: 3,
         image: TalksImg2,
-        name: "3",
+        name: "IPAD AIR",
+        caption: "Light, Bright and Full of might",
         type: "Gadget"
 
     },
     {
         id: 4,
         image: TalksImg3,
-        name: "4",
+        name: "CLEAN-CUT",
+        caption: "Get your freshest cut ",
         type: "Service"
 
     },

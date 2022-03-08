@@ -397,13 +397,21 @@ body {
   color: white;
   padding: 0;
   margin: 0;
+  font-size: 30px;
 }
 .topratedinfo {
   width: 800px;
   height: 550px;
-
   margin-top: -560px;
 }
+
+.topratedbtminfo {
+  margin-top: 50%;
+  margin-left: 5%;
+  width: 100%;
+  max-width: 90%;
+}
+
 .talksrightbtn {
   z-index: 0;
   display: flex;

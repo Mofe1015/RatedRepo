@@ -12,6 +12,7 @@ function TalksScrollInfo(props){
                 <h1 className='talkstoptexttype'>{props.type}</h1>
                 <div className='topratedbtminfo'>
                     <p className='topratedname'>{props.name}</p>
+                    <p className='topratedname'>{props.caption}</p>
                 </div>
                 
             </div>
@@ -26,6 +27,7 @@ const AllTalks = TalksData.map((talksdata) => {
                 key = {talksdata.id}
                 img = {talksdata.image}
                 name = {talksdata.name}
+                caption = {talksdata.caption}
                 type = {talksdata.type}
             />
         </div>
