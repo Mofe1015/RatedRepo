@@ -7,10 +7,13 @@ import RecommendData from './RecommendData';
 function TalksScrollInfo(props){
     return(
         <div>
-            <img className='talksimg' src={props.img} />
+           
             <div className='topratedinfo'>
                 <h1 className='talkstoptexttype'>{props.type}</h1>
-                <p className='topratedname'></p>
+                <div className='topratedbtminfo'>
+                    <p className='topratedname'>{props.name}</p>
+                </div>
+                
             </div>
         </div>
     )
