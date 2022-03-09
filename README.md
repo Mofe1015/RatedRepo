@@ -1,6 +1,6 @@
 # RATED--repo
 
-<img src="gitimages/fullratedpagez.png" width="100%" margin-bottom = "40px" >
+<img src="gitimages/fullratedpage2.png" width="100%" margin-bottom = "40px" >
 
 ## VIDEO PREVIEW!!
 
