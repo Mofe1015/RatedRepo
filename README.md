@@ -5,7 +5,8 @@
 ## Check out my latest project >> [ RATED WEBSITE](https://github.com/Mofe1015/RatedRepo)
 
 This ia a rating website made with REACT, JAVASCRIPT, CSS, HTML.
-It's just a simple FRONTEND project for implementing the basic workings of REACT
+It's just a simple FRONTEND project for implementing the basic workings of REACT.
+Couple of the data is mapped from a javascript list.
 
 So far, Auto Scroll and soe minor features have been implemented. I also hope to integrate Api usage, User accouts, etc.
 
@@ -16,7 +17,7 @@ So far, Auto Scroll and soe minor features have been implemented. I also hope to
 ## Design ❄👌
 
 - Front End: HTML, CSS, Vanilla JS, REACT
-- Back End: Coming Soon
+- Back End: JavaScript
 
 ## Building 🏢🚀
 
