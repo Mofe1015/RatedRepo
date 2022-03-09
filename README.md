@@ -1,6 +1,6 @@
 # RATED--repo
 
-<img src="gitimages/fullrated.png" width="100%" margin-bottom = "40px" >
+<img src="gitimages/fullratedpage1.png" width="100%" margin-bottom = "40px" >
 
 ## Check out my latest project >> [ RATED WEBSITE](https://github.com/Mofe1015/RatedRepo)
 
