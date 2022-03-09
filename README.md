@@ -1,13 +1,10 @@
 # RATED--repo
 
-<img src="gitimages/fullratedpage1.png" width="100%" margin-bottom = "40px" >
-
+<img src="gitimages/fullratedpagez.png" width="100%" margin-bottom = "40px" >
 
 ## VIDEO PREVIEW!!
 
 https://user-images.githubusercontent.com/70088500/157361380-e34a7b7f-da72-4902-a7f9-c8b8706a71bc.mov
-
-
 
 ## Check out my latest project >> [ RATED WEBSITE](https://github.com/Mofe1015/RatedRepo)
 
@@ -22,7 +19,6 @@ So far, Auto Scroll and soe minor features have been implemented. I also hope to
     This is just a Project WebSite, certain  features may not be  functional
 
 ## Design ❄👌
-
 
 - Front End: HTML, CSS, Vanilla JS, REACT
 - Back End: JavaScript
@@ -44,6 +40,3 @@ If you encounter any bugs or are facing any issues with the code, please don't h
 email : mofeomotosho@gmail.com
 
 ### MOFE
-
-
-
