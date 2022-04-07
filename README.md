@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/70088500/157361380-e34a7b7f-da72-4902-
 
 ## Check out my latest project >> [ RATED WEBSITE](https://github.com/Mofe1015/RatedRepo)
 
-This ia a rating website made with REACT, JAVASCRIPT, CSS, HTML.
+This is a rating website made with REACT, JAVASCRIPT, CSS, HTML.
 It's just a simple FRONTEND project for implementing the basic workings of REACT.
 Couple of the data is mapped from a javascript list.
 
