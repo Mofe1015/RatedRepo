@@ -16,7 +16,7 @@ So far, Auto Scroll and soe minor features have been implemented. I also hope to
 
 ## NOTICE!!
 
-    This is just a Project WebSite, certain  features may not be  functional(Would be deployed soon)
+    This is just a Project WebSite, certain  features may not be  functional (Would be deployed soon)
 
 ## Design ❄👌
 
