@@ -39,4 +39,6 @@ If you encounter any bugs or are facing any issues with the code, please don't h
 
 email : mofeomotosho8@gmail.com
 
+Deployment coming soon 
+
 ### MOFE
